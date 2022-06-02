@@ -29,3 +29,26 @@
 - software installation and support;
 - setting up office equipment (printers, scanners, MFPs);
 - WEB-programming (Java; Oracle + Apache + HTML + JavaScript)
+
+### Education:
+_Systems engineer_, Brest State Technical University, Brest, Belarus, 1993-09 – 1998-07, Faculty of Electronics and Mechanics, specialty "Computers, systems, complexes, networks"
+
+### Skills:
+- configuration and administration DLP-system Zecurion Zlock in conjunction with Active Directory and MS SQL Server;
+- experience in administration of Windows XP/7/10, Windows Server 2003/2016/2019); CentOS, Fedora, Debian; OС Novell Netware 6.5; MS SQL Server; Remote Desktop Services;
+- Powershell, Bash, JScript (WSH), VBScript (WSH);
+- administration of VMware ESXi, VMware Workstation;
+- experience in configuration of Firewalld, IPTables, Squid, OpenVPN (Linux, Windows), Apache, Named (basic settings), Dante Socks Server, Samba, DrWeb eSuite, DNS, DHCP, DFS, Printing Services, Group Policies; 
+- Veeam Backup & Replication;
+- basic knowledge of Zabbix;
+- Microsoft Visual C++;
+- worked a little with Microsoft Azure;
+- configuration of switching equipment (ACL, routing, VLAN);
+- knowledge of operating principles of IP, TCP, UDP, ICMP, ARP, SNMP, DNS, DHCP, NTP, HTTP, SMTP, POP3, IMAP;
+- Git;
+- SCS installation; 
+- basic knowledge of T-SQL.
+
+### Languages:
+- English, intermediate (B1) 
+- Polish, elementary
