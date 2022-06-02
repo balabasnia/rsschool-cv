@@ -52,3 +52,19 @@ _Systems engineer_, Brest State Technical University, Brest, Belarus, 1993-09 â€
 ### Languages:
 - English, intermediate (B1) 
 - Polish, elementary
+
+### Certifications & Courses:
+- CISCO CCNA-1 (Introduction to Networks), Belarusian State Academy of Communications, Minsk (2021)
+- Network and system administration in Linux, Belarusian State Academy of Communications, Minsk (2020)
+- Working with Linux, Institute for advanced training and retraining of executives and specialists in information technologies and radio electronics, Belarusian State University of Informatics and Radioelectronics, Minsk (2012)
+- Programming in C# on the Microsoft .NET platform, Institute for advanced training and retraining of executives and specialists in information technologies and radio electronics, Belarusian State University of Informatics and Radioelectronics, Minsk (2012)
+- Novell Netware 6.5 Networking Basics, 'IVA' Private Training Center, Minsk (2007)
+- Brainbench Certificate in HTML 4.0 knowledge, www.brainbench.com (2000)
+
+### Personal qualities: 
+Punctuality, responsibility, the ability to teach, perseverance, the desire for professional development, accuracy, the habit of bringing things to the end. 
+
+### additional information: 
+Marital status: Married  
+Children: yes.  
+Driver's license: yes.  
