@@ -1,0 +1,18 @@
+.main-header {
+    font-size: xx-large;
+}
+.image {
+    width: 200px;
+}
+
+#experience, 
+#education, 
+#skills, 
+#languages,
+#certifications--courses,
+#personal-qualities,
+#additional-information,
+#examples-of-code,
+#my-projects {
+    font-size: large;
+}
