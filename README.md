@@ -1,2 +1,2 @@
 # rsschool-cv
-public rs-school repository
+https://balabasnia.github.io/rsschool-cv/cv
