@@ -37,7 +37,9 @@ a:visited {
     background-color: rgb(203, 219, 232);
     min-height: 60px;
 }
-
+.header {
+    position: sticky;
+}
 .container {
     display: flex; /* размещаем секции по горизонтали */
     flex-wrap: wrap; /* разрешить перенос секций на следующую строку */
@@ -95,8 +97,9 @@ a:visited {
     padding: 5px;
     border-radius: 15px;
     height: 200px;
-    line-height: 200px;
+    /* line-height: 200px; */
     text-align: center;
+    box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.3); /* добавляем тень аватарке */
 }
 
 .rs-school-logo {
@@ -136,6 +139,7 @@ a:visited {
     position: relative;
     /* padding-left: var(--left-padding); */
     display: flex;
+    flex-wrap: wrap; /* в случае уменьшения размера окна переносим текст 'Roman Petrovsky' под картинку*/
     justify-content: space-around;
     padding: 30px 30px;
     border-bottom: 10px solid #d7d1c9;
