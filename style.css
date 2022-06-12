@@ -75,7 +75,6 @@ a:visited {
 }
 
 .nav-item {
-    align-content: right;
     float: left;
     display: flex;
     flex-wrap: wrap;
