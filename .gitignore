@@ -1,4 +1,5 @@
 *_new.*
 *_old.*
 *.old
-
+.editorconfig
+.linthtml
