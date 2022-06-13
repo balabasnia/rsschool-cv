@@ -60,6 +60,12 @@ a:visited {
     margin: 0 auto;
 }
 
+header {
+  position: sticky; /* Липкое позиционирование, оставляем меню всегда сверху экрана */
+  top: 0;
+  z-index: 100;
+}
+
 .nav {
     max-width: 1400px;
 
