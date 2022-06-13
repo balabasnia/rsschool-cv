@@ -1,0 +1,246 @@
+/* объявляем переменные */
+:root {
+    --left-padding: 30px;
+    --main-bgcolor: #615f5f;
+    --section-divider-color: #d7d1c9;
+    --border-bottom: 15px solid #d7d1c9;
+}
+
+* {
+    /* границы и внутренние отступы будут учитываться в значениях, которые вы указываете в ширине и высоте элемента. */
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* плавная прокрутка окна */
+}
+
+body {
+    /* Позиционирование */
+    min-height: 100vh;
+
+    /* Блочная модель */
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    flex: 1;
+    flex-direction: column; /* располагаем footer, body, header вертикально (в столбец)*/
+    /* все элементы размещаются на максимальном расстоянии друг от друга, крайние прижаты к границам родителя. */
+    justify-content: space-between;
+
+    /* Типографика */
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.3;
+    color: var(--main-bgcolor);
+}
+
+a:link,
+a:visited {
+    color: blue;
+}
+
+.header,
+.footer {
+    min-height: 60px;
+
+    background-color: #cbdbe8;
+}
+
+/* .header { */
+/* position: sticky; */
+/* top: 0; */
+/* } */
+
+.container {
+    max-width: 1440px;
+
+    display: flex; /* размещаем секции по горизонтали */
+    flex-wrap: wrap; /* разрешить перенос секций на следующую строку */
+    margin: 0 auto;
+}
+
+header {
+  position: sticky; /* Липкое позиционирование, оставляем меню всегда сверху экрана */
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+    max-width: 1400px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; /* прижать все флексы вправо */
+    align-items: center; /* выровнять по центру по высоте */
+    margin: 5px;
+
+    list-style: none; /* убираем стандартные маркеры */
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+.nav-item {
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 2px;
+    height: 50px;
+
+    border: none;
+}
+
+.nav-link {
+    padding: 0 20px;
+
+    line-height: 20px; /* расстояние между строками */
+
+    transition: 0.5s; /* чтобы свойства менялись плавно */
+}
+
+.nav-item a,
+.contact-list a,
+.section a,
+.footer-container a {
+    color: #2b72ca;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-item a:hover,
+.contact-list a:hover,
+.section a:hover,
+.footer-container a:hover {
+    color: #eb2222;
+}
+
+.profile-logo {
+    margin: 15px; /* минимальное расстояние между аватаром и 'Roman Petrovsky' при изменении масштаба */
+    height: 200px;
+
+    text-align: center;
+
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.302); /* добавляем тень аватарке */
+    border-radius: 20px;
+    border: none;
+}
+
+.rs-school-logo {
+    padding: 5px;
+    height: 50px;
+
+    line-height: 50px;
+    text-align: center;
+}
+
+.section::before {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    padding-left: 100%; /* распространяем background до конца строки */
+
+    content: '';
+    font-size: 40%; /* толщина линии между секциями - это размер шрифта */
+
+    border-radius: 10px; /* закругляем концы линий */
+    background: var(--section-divider-color);
+}
+
+/* убираем разделительную строку сверху над секциями Summary и Experience */
+.section:nth-child(3):before,
+.section:nth-child(4):before {
+    border: none;
+    background: none;
+}
+
+.section {
+    position: relative;
+    width: 50%; /* каждая секция занимает ровно половину ширины контейнера */
+    padding-left: var(--left-padding);
+}
+
+.section-profile {
+    position: relative;
+    width: 50%; /* каждая секция занимает ровно половину ширины контейнера */
+    padding: 10px 10px;
+    display: flex;
+    flex-wrap: wrap; /* в случае уменьшения размера окна переносим текст 'Roman Petrovsky' под картинку*/
+    justify-content: space-around;
+
+    border-bottom: var(--border-bottom);
+}
+
+.section-contacts {
+    position: relative;
+    width: 50%; /* каждая секция занимает ровно половину ширины контейнера */
+    padding: 10px 10px;
+    padding-left: var(--left-padding);
+
+    border-bottom: var(--border-bottom);
+}
+
+/* при уменьшении ширины экрана до 572px каждая секция будет занимать всю ширину */
+@media (max-width: 572px) {
+    .section,
+    .section-profile,
+    .section-contacts {
+        width: 100%;
+    }
+}
+
+.subsection {
+    font-size: 1.4em;
+}
+
+.section-title {
+    font-size: 200%;
+    font-weight: bold;
+
+    color: black;
+}
+
+.section-subtitle {
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.contact-list {
+    list-style: none;
+}
+
+.project-title,
+.experience-title,
+.skills-title,
+.education-title,
+.languages-title,
+.contact-title {
+    font-weight: 600;
+}
+
+.footer-container {
+    margin-left: 2px;
+    height: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.3;
+
+    border: none;
+}
+
+/* чтобы код внутри тега <pre> врапался, если не умещается на экране */
+pre {
+    max-width: 100%;
+
+    display: inline-block;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+}

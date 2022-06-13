@@ -1,0 +1,6 @@
+*_new.*
+*_old.*
+*.old
+*.log
+.*
+!.gitignore
